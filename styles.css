@@ -12,6 +12,7 @@
     --accent: #d4a853;
     --border: #262626;
     --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-display: 'Syne', sans-serif;
 }
 
 * {
@@ -45,17 +46,38 @@ body {
    ======================================== */
 
 h1 {
+    font-family: var(--font-display);
     font-size: clamp(3rem, 6vw, 4.5rem);
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.1;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
 }
 
 h2 {
+    font-family: var(--font-display);
     font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.15;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
+}
+
+/* Highlighter / Marker effect */
+.highlight {
+    background: linear-gradient(104deg, rgba(255, 220, 90, 0) 0.9%, rgba(255, 220, 90, 0.7) 2.4%, rgba(255, 220, 90, 0.5) 5.8%, rgba(255, 220, 90, 0.35) 93%, rgba(255, 220, 90, 0.6) 96%, rgba(255, 220, 90, 0) 98%);
+    padding: 0.1em 0.3em;
+    margin: 0 -0.3em;
+    border-radius: 0.8em 0.3em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.highlight-pink {
+    background: linear-gradient(104deg, rgba(255, 130, 180, 0) 0.9%, rgba(255, 130, 180, 0.7) 2.4%, rgba(255, 130, 180, 0.5) 5.8%, rgba(255, 130, 180, 0.35) 93%, rgba(255, 130, 180, 0.6) 96%, rgba(255, 130, 180, 0) 98%);
+    padding: 0.1em 0.3em;
+    margin: 0 -0.3em;
+    border-radius: 0.8em 0.3em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
 h3 {
