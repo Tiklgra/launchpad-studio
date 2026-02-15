@@ -337,6 +337,50 @@ p {
 }
 
 /* ========================================
+   Process / How We Work
+   ======================================== */
+
+.process {
+    padding: 120px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.process h2 {
+    max-width: 600px;
+    margin-bottom: 80px;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px;
+}
+
+.process-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--bg);
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.process-step h4 {
+    margin-bottom: 12px;
+}
+
+.process-step p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+/* ========================================
    Work / Portfolio
    ======================================== */
 
@@ -594,7 +638,8 @@ p {
         grid-template-columns: 1fr;
     }
     
-    .approach-grid {
+    .approach-grid,
+    .process-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
@@ -633,12 +678,14 @@ p {
     
     .services,
     .approach,
+    .process,
     .about,
     .contact {
         padding: 80px 0;
     }
     
-    .approach-grid {
+    .approach-grid,
+    .process-grid {
         grid-template-columns: 1fr;
     }
     
