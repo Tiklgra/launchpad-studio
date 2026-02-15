@@ -292,6 +292,13 @@ p {
     border-top: 1px solid var(--border);
 }
 
+.service-note {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 12px;
+    font-style: italic;
+}
+
 /* ========================================
    Approach
    ======================================== */
