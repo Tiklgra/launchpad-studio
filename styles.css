@@ -305,7 +305,6 @@ p {
 
 .approach {
     padding: 120px 0;
-    background: var(--bg-subtle);
     border-bottom: 1px solid var(--border);
 }
 
@@ -379,7 +378,6 @@ p {
 
 .work {
     padding: 120px 0;
-    background: var(--bg-subtle);
     border-bottom: 1px solid var(--border);
 }
 
